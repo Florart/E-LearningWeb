@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags always come first -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="style.css">
+    <title>E-Learning</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="/images/logo.jpg" width="150px" height="60px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="course.html"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Courses
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Nursery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Primary</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Secondary</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Others</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link " href="blog.html" target="_blank">Our Blog</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+     
+      
+      <div class="container pb-modalreglog-container ">
+              <div class="row">
+              <div class="col-12 col-md-4 ">
+                <h3 class="modal-title w-100 " ><strong>Log in or Sign Up </strong></h3>
+                  <div class="input-group pb-modalreglog-input-group">
+                      <button class="btn btn-primary pb-modalreglog-submit" data-toggle="modal" data-target="#myModal">Login</button>
+                      <button class="btn btn-primary pb-modalreglog-submit" data-toggle="modal" data-target="#myModal2">Register</button>
+                  </div>
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                <h3 class="modal-title w-100 " ><strong>Log in</strong></h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  <form>
+                                      <div class="form-group">
+                                          <label for="email">Email address</label>
+                                          <div class="input-group pb-modalreglog-input-group">
+                                              <input type="email" class="form-control" id="email" placeholder="Email">
+                                             
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="password">Password</label>
+                                          <div class="input-group pb-modalreglog-input-group">
+                                              <input type="password" class="form-control" id="pws" placeholder="Password">
+                                            
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary"><a href="index.html"></a>Log in</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog " role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                <h3 class="modal-title w-100 " ><strong>Register</strong></h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  <form class="pb-modalreglog-form-reg">
+                                      <div class="form-group">
+                                          <div id="pb-modalreglog-progressbar"></div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="email">Email address</label>
+                                          <div class="input-group pb-modalreglog-input-group">
+                                             
+                                              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="password">Password</label>
+                                          <div class="input-group pb-modalreglog-input-group">
+                                             
+                                              <input type="password" class="form-control" id="inputPws" placeholder="Password">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="confirmpassword">Confirm password</label>
+                                          <div class="input-group pb-modalreglog-input-group">
+                                              
+                                              <input type="password" class="form-control"  placeholder="Confirm Password">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="country">Country</label>
+                                          <div class="input-group pb-modalreglog-input-group">
+                                            
+                                              <input type="text" class="form-control"placeholder="Country">
+                                          </div>
+                                      </div>
+                            
+                                      <div class="form-group">
+                                          <input type="checkbox" id="ch" name="chs">
+                                          I agree with <a href="#">terms and conditions.</a>
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary"><a href="indext.html"></a>Sign up</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> 
+      
+     
+     
+ <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+ <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+ <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
